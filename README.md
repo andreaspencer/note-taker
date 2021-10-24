@@ -13,8 +13,9 @@ This applictaion allows the user to write/ create notes then save them using the
 * ability to delete existing notes from the left hand collumn
 
 ### My Work
-* created routes to route information to write to html'
-* created functions to create and delete notes
+* created routes to write to html
+* created route for index to open notes html
+* created functions to create save and delete notes
 * used json information from user to save to the page
 
 #### Screenshot

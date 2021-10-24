@@ -1,10 +1,11 @@
 const PORT = process.env.PORT || 3001
 const express = require ('express');
 const app = express ();
+
 const fs = require('fs');
 const path = require('path');
 
-const allNotes = require('./db/db.json');
+const notes = require('./db/db.json');
 
 app.use(express.urlencoded({
     extended: true
@@ -50,7 +51,7 @@ function createNewNote(body, notesArray) {
 }
 
 app.post('/api/notes', (req, res) => {
-    const newNote = createNewNote(req.body, allNotes);
+    const newNote = createNewNote(req.body, notes);
     res.json(newNote);
 });
 
@@ -71,7 +72,7 @@ function deleteNote(id, notesArray) {
 }
 
 app.delete('/api/notes/:id', (req,res) => {
-    deleteNote(req.params.id, allNotes);
+    deleteNote(req.params.id, notes);
     res.json(true);
 });
 
