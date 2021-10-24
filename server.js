@@ -4,16 +4,17 @@ const app = express ();
 const fs = require('fs');
 const path = require('path');
 
-const notes = require('./db/db.json');
+const allNotes = require('./db/db.json');
 
 app.use(express.urlencoded({
     extended: true
 }));
+
 app.use(express.static('public'));
 app.use(express.json());
 
 app.get('/api/notes', (req, res) => {
-    res.json(notes.slice(1));
+    res.json(allNotes.slice(1));
 });
 
 app.get('/', (req, res) => {
@@ -32,6 +33,7 @@ function createNewNote(body, notesArray) {
     const newNote = body;
     if(!Array.isArray(notesArray))
         notesArray = [];
+    
     if(notesArray.length === 0)
         notesArray.push(0);
     
@@ -48,7 +50,7 @@ function createNewNote(body, notesArray) {
 }
 
 app.post('/api/notes', (req, res) => {
-    const newNote = createNewNote(req.body, notes);
+    const newNote = createNewNote(req.body, allNotes);
     res.json(newNote);
 });
 
@@ -69,7 +71,7 @@ function deleteNote(id, notesArray) {
 }
 
 app.delete('/api/notes/:id', (req,res) => {
-    deleteNote(req.params.id, notes);
+    deleteNote(req.params.id, allNotes);
     res.json(true);
 });
 
