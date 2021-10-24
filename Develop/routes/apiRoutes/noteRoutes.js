@@ -1,11 +1,11 @@
 const router = require("express").Router();
 const {
     notes
-} = require('../../db/db');
+} = require('../develop/db/db');
 const {
     createNewNote,
     deleteNote
-} = require('../../lib/noteFunctions');
+} = require('../develop/lib/note');
 
 router.get('/notes', (req, res) => {
     let saved = notes;
