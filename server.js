@@ -15,7 +15,7 @@ app.use(express.static('public'));
 app.use(express.json());
 
 app.get('/api/notes', (req, res) => {
-    res.json(allNotes.slice(1));
+    res.json(notes.slice(1));
 });
 
 app.get('/', (req, res) => {
