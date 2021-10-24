@@ -19,6 +19,7 @@ This applictaion allows the user to write/ create notes then save them using the
 * used json information from user to save to the page
 
 #### Screenshot
+/Users/dawn/Desktop/projects/note-taker/images/Screen Shot 2021-10-24 at 1.59.12 PM.png
 
 ##### Live URL
 https://challenge10-notetaker.herokuapp.com/
