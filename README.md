@@ -18,6 +18,12 @@ This applictaion allows the user to write/ create notes then save them using the
 * created functions to create save and delete notes
 * used json information from user to save to the page
 
+#### Installation
+* copy git hub repo link 
+* open terminal and git clone repo link to an area of your computer you can easily navigate to
+    - type cd note-taker in the terminal 
+    - type code . to open project file in VS code
+
 #### Screenshot
 ![screenshot](/images/screenshot.png)
 
