@@ -1,7 +1,9 @@
 {
-    "note": [
+    "notes": [
         {
-           
+            "title": "Welcome to the Note Taker App!",
+            "message": "This application allows you to create, save and delete notes.",
+            "id": "0"
         }
     ]
 }
