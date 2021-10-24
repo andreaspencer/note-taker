@@ -1,14 +1,7 @@
 {
     "note": [
         {
-            "title":"Welcome to Note Taker",
-            "text":"This app allows you to take notes, save notes, and delete notes. You can write a note by clicking the pencil icon and save the note by pressing the save icon.",
-            "id": "0"
-        },
-        {
-            "title": "Deleting Notes",
-            "text": "You can delete notes by clicking the trash icon next to the note you would like to delete.",
-            "id": "1"
+           
         }
     ]
 }
